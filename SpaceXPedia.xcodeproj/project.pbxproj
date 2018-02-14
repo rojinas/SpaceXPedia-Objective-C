@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E397628202D6ADF00D331DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E397627202D6ADF00D331DC /* AppDelegate.m */; };
+		7E397631202D6ADF00D331DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E39762F202D6ADF00D331DC /* Main.storyboard */; };
+		7E397633202D6ADF00D331DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E397632202D6ADF00D331DC /* Assets.xcassets */; };
+		7E397636202D6ADF00D331DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E397634202D6ADF00D331DC /* LaunchScreen.storyboard */; };
+		7E397639202D6ADF00D331DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E397638202D6ADF00D331DC /* main.m */; };
+		7E397643202D6ADF00D331DC /* SpaceXPediaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E397642202D6ADF00D331DC /* SpaceXPediaTests.m */; };
+		7E397652202D6BC700D331DC /* RocketDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E397651202D6BC700D331DC /* RocketDataViewController.m */; };
+		7E397657202D6C0100D331DC /* CapsuleDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E397656202D6C0100D331DC /* CapsuleDataViewController.m */; };
+		7E39765B202D6C1B00D331DC /* PastLaunchesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E39765A202D6C1B00D331DC /* PastLaunchesViewController.m */; };
+		7E39765E202D6CC300D331DC /* HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E39765D202D6CC300D331DC /* HTTPRequest.m */; };
+		7E397662202D6CE100D331DC /* SpaceXApiService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E397661202D6CE100D331DC /* SpaceXApiService.m */; };
+		7E397667202D738F00D331DC /* RocketModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E397666202D738F00D331DC /* RocketModel.m */; };
+		7E39766A202D8ADC00D331DC /* RocketDataTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E397669202D8ADC00D331DC /* RocketDataTableCell.m */; };
+		7E39766D202DA3BE00D331DC /* CapsulDataTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E39766C202DA3BE00D331DC /* CapsulDataTableCell.m */; };
+		7E3976722030297900D331DC /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3976712030297900D331DC /* Utilities.m */; };
+		7E39767D20302DFD00D331DC /* UpcomingLaunchesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E39767C20302DFD00D331DC /* UpcomingLaunchesTableViewCell.m */; };
+		7E39768020302E1A00D331DC /* UpcomingLaunchesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E39767F20302E1A00D331DC /* UpcomingLaunchesTableViewController.m */; };
+		7E397683203037BE00D331DC /* PastLaunchesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E397682203037BE00D331DC /* PastLaunchesTableViewCell.m */; };
+		7E3976862030B00600D331DC /* AbstractTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3976852030B00600D331DC /* AbstractTableViewController.m */; };
+		7E3976882030BD3B00D331DC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3976872030BD3B00D331DC /* QuartzCore.framework */; };
+		7E39768B2030C20D00D331DC /* RocketDataModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E39768A2030C20D00D331DC /* RocketDataModelTests.m */; };
+		7E39768D2030C4C500D331DC /* RocketTestData.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E39768C2030C4C500D331DC /* RocketTestData.json */; };
+		9A2AB4F920317C7000B9DF83 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9A2AB4F820317C7000B9DF83 /* README.md */; };
+		D058E844CBA819888A782E7D /* Pods_SpaceXPediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3692B1E10F14EAEFBE81A100 /* Pods_SpaceXPediaTests.framework */; };
+		DCAFA1CE9B0EAD20425A9A1B /* Pods_SpaceXPedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7597BC948D0E5CA08F0DD3A1 /* Pods_SpaceXPedia.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E39763F202D6ADF00D331DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E39761B202D6ADF00D331DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E397622202D6ADF00D331DC;
+			remoteInfo = SpaceXPedia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3342DD8BFDA18A539900FB20 /* Pods-SpaceXPediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXPediaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceXPediaTests/Pods-SpaceXPediaTests.release.xcconfig"; sourceTree = "<group>"; };
+		3692B1E10F14EAEFBE81A100 /* Pods_SpaceXPediaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceXPediaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7597BC948D0E5CA08F0DD3A1 /* Pods_SpaceXPedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceXPedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E397623202D6ADF00D331DC /* SpaceXPedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXPedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E397626202D6ADF00D331DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7E397627202D6ADF00D331DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7E397630202D6ADF00D331DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E397632202D6ADF00D331DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E397635202D6ADF00D331DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E397637202D6ADF00D331DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E397638202D6ADF00D331DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7E39763E202D6ADF00D331DC /* SpaceXPediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXPediaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E397642202D6ADF00D331DC /* SpaceXPediaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceXPediaTests.m; sourceTree = "<group>"; };
+		7E397644202D6ADF00D331DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E397650202D6BC700D331DC /* RocketDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RocketDataViewController.h; sourceTree = "<group>"; };
+		7E397651202D6BC700D331DC /* RocketDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RocketDataViewController.m; sourceTree = "<group>"; };
+		7E397655202D6C0100D331DC /* CapsuleDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CapsuleDataViewController.h; sourceTree = "<group>"; };
+		7E397656202D6C0100D331DC /* CapsuleDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CapsuleDataViewController.m; sourceTree = "<group>"; };
+		7E397659202D6C1B00D331DC /* PastLaunchesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PastLaunchesViewController.h; sourceTree = "<group>"; };
+		7E39765A202D6C1B00D331DC /* PastLaunchesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PastLaunchesViewController.m; sourceTree = "<group>"; };
+		7E39765C202D6CC300D331DC /* HTTPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPRequest.h; sourceTree = "<group>"; };
+		7E39765D202D6CC300D331DC /* HTTPRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPRequest.m; sourceTree = "<group>"; };
+		7E397660202D6CE100D331DC /* SpaceXApiService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceXApiService.h; sourceTree = "<group>"; };
+		7E397661202D6CE100D331DC /* SpaceXApiService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpaceXApiService.m; sourceTree = "<group>"; };
+		7E397665202D738F00D331DC /* RocketModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RocketModel.h; sourceTree = "<group>"; };
+		7E397666202D738F00D331DC /* RocketModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RocketModel.m; sourceTree = "<group>"; };
+		7E397668202D8ADC00D331DC /* RocketDataTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RocketDataTableCell.h; sourceTree = "<group>"; };
+		7E397669202D8ADC00D331DC /* RocketDataTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RocketDataTableCell.m; sourceTree = "<group>"; };
+		7E39766B202DA3BE00D331DC /* CapsulDataTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CapsulDataTableCell.h; sourceTree = "<group>"; };
+		7E39766C202DA3BE00D331DC /* CapsulDataTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CapsulDataTableCell.m; sourceTree = "<group>"; };
+		7E3976702030297900D331DC /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		7E3976712030297900D331DC /* Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		7E39767B20302DFD00D331DC /* UpcomingLaunchesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpcomingLaunchesTableViewCell.h; sourceTree = "<group>"; };
+		7E39767C20302DFD00D331DC /* UpcomingLaunchesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpcomingLaunchesTableViewCell.m; sourceTree = "<group>"; };
+		7E39767E20302E1A00D331DC /* UpcomingLaunchesTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpcomingLaunchesTableViewController.h; sourceTree = "<group>"; };
+		7E39767F20302E1A00D331DC /* UpcomingLaunchesTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpcomingLaunchesTableViewController.m; sourceTree = "<group>"; };
+		7E397681203037BE00D331DC /* PastLaunchesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PastLaunchesTableViewCell.h; sourceTree = "<group>"; };
+		7E397682203037BE00D331DC /* PastLaunchesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PastLaunchesTableViewCell.m; sourceTree = "<group>"; };
+		7E3976842030B00600D331DC /* AbstractTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractTableViewController.h; sourceTree = "<group>"; };
+		7E3976852030B00600D331DC /* AbstractTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractTableViewController.m; sourceTree = "<group>"; };
+		7E3976872030BD3B00D331DC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7E39768A2030C20D00D331DC /* RocketDataModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RocketDataModelTests.m; sourceTree = "<group>"; };
+		7E39768C2030C4C500D331DC /* RocketTestData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RocketTestData.json; sourceTree = "<group>"; };
+		9A2AB4F820317C7000B9DF83 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A72B13D9B06DB818BC783004 /* Pods-SpaceXPedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXPedia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceXPedia/Pods-SpaceXPedia.debug.xcconfig"; sourceTree = "<group>"; };
+		C63712EDE1EF1E6BB33F9BF5 /* Pods-SpaceXPedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXPedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceXPedia/Pods-SpaceXPedia.release.xcconfig"; sourceTree = "<group>"; };
+		DA0D9F2D5882C0ADAB4FB7DD /* Pods-SpaceXPediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXPediaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceXPediaTests/Pods-SpaceXPediaTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E397620202D6ADF00D331DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3976882030BD3B00D331DC /* QuartzCore.framework in Frameworks */,
+				DCAFA1CE9B0EAD20425A9A1B /* Pods_SpaceXPedia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E39763B202D6ADF00D331DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D058E844CBA819888A782E7D /* Pods_SpaceXPediaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06C0B2401D6A87FE2F07D7EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E3976872030BD3B00D331DC /* QuartzCore.framework */,
+				7597BC948D0E5CA08F0DD3A1 /* Pods_SpaceXPedia.framework */,
+				3692B1E10F14EAEFBE81A100 /* Pods_SpaceXPediaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C27B7AF15289099A8BE1D70 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A72B13D9B06DB818BC783004 /* Pods-SpaceXPedia.debug.xcconfig */,
+				C63712EDE1EF1E6BB33F9BF5 /* Pods-SpaceXPedia.release.xcconfig */,
+				DA0D9F2D5882C0ADAB4FB7DD /* Pods-SpaceXPediaTests.debug.xcconfig */,
+				3342DD8BFDA18A539900FB20 /* Pods-SpaceXPediaTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E39761A202D6ADF00D331DC = {
+			isa = PBXGroup;
+			children = (
+				9A2AB4F820317C7000B9DF83 /* README.md */,
+				7E397625202D6ADF00D331DC /* SpaceXPedia */,
+				7E397641202D6ADF00D331DC /* SpaceXPediaTests */,
+				7E397624202D6ADF00D331DC /* Products */,
+				1C27B7AF15289099A8BE1D70 /* Pods */,
+				06C0B2401D6A87FE2F07D7EE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7E397624202D6ADF00D331DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E397623202D6ADF00D331DC /* SpaceXPedia.app */,
+				7E39763E202D6ADF00D331DC /* SpaceXPediaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E397625202D6ADF00D331DC /* SpaceXPedia */ = {
+			isa = PBXGroup;
+			children = (
+				7E39766E2030296000D331DC /* Utils */,
+				7E397664202D736E00D331DC /* Model */,
+				7E39765F202D6CCD00D331DC /* Services */,
+				7E39764E202D6B4500D331DC /* Libs */,
+				7E39764D202D6B2D00D331DC /* ViewControllers */,
+				7E397626202D6ADF00D331DC /* AppDelegate.h */,
+				7E397627202D6ADF00D331DC /* AppDelegate.m */,
+				7E39762F202D6ADF00D331DC /* Main.storyboard */,
+				7E397632202D6ADF00D331DC /* Assets.xcassets */,
+				7E397634202D6ADF00D331DC /* LaunchScreen.storyboard */,
+				7E397637202D6ADF00D331DC /* Info.plist */,
+				7E397638202D6ADF00D331DC /* main.m */,
+			);
+			path = SpaceXPedia;
+			sourceTree = "<group>";
+		};
+		7E397641202D6ADF00D331DC /* SpaceXPediaTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E3976892030C1F000D331DC /* ModelTests */,
+				7E397642202D6ADF00D331DC /* SpaceXPediaTests.m */,
+				7E397644202D6ADF00D331DC /* Info.plist */,
+			);
+			path = SpaceXPediaTests;
+			sourceTree = "<group>";
+		};
+		7E39764D202D6B2D00D331DC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7E39767A20302DD300D331DC /* Upcoming Launches */,
+				7E397658202D6C0400D331DC /* PastLaunches */,
+				7E397654202D6BE800D331DC /* CapsuleData */,
+				7E397653202D6BD300D331DC /* RocketData */,
+				7E3976842030B00600D331DC /* AbstractTableViewController.h */,
+				7E3976852030B00600D331DC /* AbstractTableViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7E39764E202D6B4500D331DC /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				7E39764F202D6B4C00D331DC /* HTTPApi */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		7E39764F202D6B4C00D331DC /* HTTPApi */ = {
+			isa = PBXGroup;
+			children = (
+				7E39765C202D6CC300D331DC /* HTTPRequest.h */,
+				7E39765D202D6CC300D331DC /* HTTPRequest.m */,
+			);
+			path = HTTPApi;
+			sourceTree = "<group>";
+		};
+		7E397653202D6BD300D331DC /* RocketData */ = {
+			isa = PBXGroup;
+			children = (
+				7E397650202D6BC700D331DC /* RocketDataViewController.h */,
+				7E397651202D6BC700D331DC /* RocketDataViewController.m */,
+				7E397668202D8ADC00D331DC /* RocketDataTableCell.h */,
+				7E397669202D8ADC00D331DC /* RocketDataTableCell.m */,
+			);
+			path = RocketData;
+			sourceTree = "<group>";
+		};
+		7E397654202D6BE800D331DC /* CapsuleData */ = {
+			isa = PBXGroup;
+			children = (
+				7E39766B202DA3BE00D331DC /* CapsulDataTableCell.h */,
+				7E39766C202DA3BE00D331DC /* CapsulDataTableCell.m */,
+				7E397655202D6C0100D331DC /* CapsuleDataViewController.h */,
+				7E397656202D6C0100D331DC /* CapsuleDataViewController.m */,
+			);
+			path = CapsuleData;
+			sourceTree = "<group>";
+		};
+		7E397658202D6C0400D331DC /* PastLaunches */ = {
+			isa = PBXGroup;
+			children = (
+				7E397659202D6C1B00D331DC /* PastLaunchesViewController.h */,
+				7E39765A202D6C1B00D331DC /* PastLaunchesViewController.m */,
+				7E397681203037BE00D331DC /* PastLaunchesTableViewCell.h */,
+				7E397682203037BE00D331DC /* PastLaunchesTableViewCell.m */,
+			);
+			path = PastLaunches;
+			sourceTree = "<group>";
+		};
+		7E39765F202D6CCD00D331DC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7E397660202D6CE100D331DC /* SpaceXApiService.h */,
+				7E397661202D6CE100D331DC /* SpaceXApiService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7E397664202D736E00D331DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7E397665202D738F00D331DC /* RocketModel.h */,
+				7E397666202D738F00D331DC /* RocketModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7E39766E2030296000D331DC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7E3976702030297900D331DC /* Utilities.h */,
+				7E3976712030297900D331DC /* Utilities.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7E39767A20302DD300D331DC /* Upcoming Launches */ = {
+			isa = PBXGroup;
+			children = (
+				7E39767B20302DFD00D331DC /* UpcomingLaunchesTableViewCell.h */,
+				7E39767C20302DFD00D331DC /* UpcomingLaunchesTableViewCell.m */,
+				7E39767E20302E1A00D331DC /* UpcomingLaunchesTableViewController.h */,
+				7E39767F20302E1A00D331DC /* UpcomingLaunchesTableViewController.m */,
+			);
+			path = "Upcoming Launches";
+			sourceTree = "<group>";
+		};
+		7E3976892030C1F000D331DC /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E39768A2030C20D00D331DC /* RocketDataModelTests.m */,
+				7E39768C2030C4C500D331DC /* RocketTestData.json */,
+			);
+			path = ModelTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E397622202D6ADF00D331DC /* SpaceXPedia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E397647202D6ADF00D331DC /* Build configuration list for PBXNativeTarget "SpaceXPedia" */;
+			buildPhases = (
+				ED09A0E7CE7AE67BB8683335 /* [CP] Check Pods Manifest.lock */,
+				7E39761F202D6ADF00D331DC /* Sources */,
+				7E397620202D6ADF00D331DC /* Frameworks */,
+				7E397621202D6ADF00D331DC /* Resources */,
+				654C7B4FB05EB007ACA4D1C8 /* [CP] Embed Pods Frameworks */,
+				0B388D5AA8D36B5EB6CB9BC9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpaceXPedia;
+			productName = SpaceXPedia;
+			productReference = 7E397623202D6ADF00D331DC /* SpaceXPedia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E39763D202D6ADF00D331DC /* SpaceXPediaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E39764A202D6ADF00D331DC /* Build configuration list for PBXNativeTarget "SpaceXPediaTests" */;
+			buildPhases = (
+				1B8C8F57704AA5E63027E32B /* [CP] Check Pods Manifest.lock */,
+				7E39763A202D6ADF00D331DC /* Sources */,
+				7E39763B202D6ADF00D331DC /* Frameworks */,
+				7E39763C202D6ADF00D331DC /* Resources */,
+				48A2A1E66C167F6E6F31865D /* [CP] Embed Pods Frameworks */,
+				43B5B2A1CFD909997FE98255 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E397640202D6ADF00D331DC /* PBXTargetDependency */,
+			);
+			name = SpaceXPediaTests;
+			productName = SpaceXPediaTests;
+			productReference = 7E39763E202D6ADF00D331DC /* SpaceXPediaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E39761B202D6ADF00D331DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = NA;
+				TargetAttributes = {
+					7E397622202D6ADF00D331DC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					7E39763D202D6ADF00D331DC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7E397622202D6ADF00D331DC;
+					};
+				};
+			};
+			buildConfigurationList = 7E39761E202D6ADF00D331DC /* Build configuration list for PBXProject "SpaceXPedia" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E39761A202D6ADF00D331DC;
+			productRefGroup = 7E397624202D6ADF00D331DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E397622202D6ADF00D331DC /* SpaceXPedia */,
+				7E39763D202D6ADF00D331DC /* SpaceXPediaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E397621202D6ADF00D331DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E397636202D6ADF00D331DC /* LaunchScreen.storyboard in Resources */,
+				7E397633202D6ADF00D331DC /* Assets.xcassets in Resources */,
+				9A2AB4F920317C7000B9DF83 /* README.md in Resources */,
+				7E397631202D6ADF00D331DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E39763C202D6ADF00D331DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E39768D2030C4C500D331DC /* RocketTestData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B388D5AA8D36B5EB6CB9BC9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpaceXPedia/Pods-SpaceXPedia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B8C8F57704AA5E63027E32B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpaceXPediaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43B5B2A1CFD909997FE98255 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpaceXPediaTests/Pods-SpaceXPediaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48A2A1E66C167F6E6F31865D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SpaceXPediaTests/Pods-SpaceXPediaTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFMInfoBanner/AFMInfoBanner.framework",
+				"${BUILT_PRODUCTS_DIR}/CVKHierarchySearcher/CVKHierarchySearcher.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFMInfoBanner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CVKHierarchySearcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpaceXPediaTests/Pods-SpaceXPediaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		654C7B4FB05EB007ACA4D1C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SpaceXPedia/Pods-SpaceXPedia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFMInfoBanner/AFMInfoBanner.framework",
+				"${BUILT_PRODUCTS_DIR}/CVKHierarchySearcher/CVKHierarchySearcher.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFMInfoBanner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CVKHierarchySearcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpaceXPedia/Pods-SpaceXPedia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED09A0E7CE7AE67BB8683335 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpaceXPedia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E39761F202D6ADF00D331DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E397652202D6BC700D331DC /* RocketDataViewController.m in Sources */,
+				7E39765E202D6CC300D331DC /* HTTPRequest.m in Sources */,
+				7E39766A202D8ADC00D331DC /* RocketDataTableCell.m in Sources */,
+				7E397657202D6C0100D331DC /* CapsuleDataViewController.m in Sources */,
+				7E397683203037BE00D331DC /* PastLaunchesTableViewCell.m in Sources */,
+				7E39767D20302DFD00D331DC /* UpcomingLaunchesTableViewCell.m in Sources */,
+				7E39765B202D6C1B00D331DC /* PastLaunchesViewController.m in Sources */,
+				7E39768020302E1A00D331DC /* UpcomingLaunchesTableViewController.m in Sources */,
+				7E39766D202DA3BE00D331DC /* CapsulDataTableCell.m in Sources */,
+				7E3976722030297900D331DC /* Utilities.m in Sources */,
+				7E397667202D738F00D331DC /* RocketModel.m in Sources */,
+				7E397662202D6CE100D331DC /* SpaceXApiService.m in Sources */,
+				7E3976862030B00600D331DC /* AbstractTableViewController.m in Sources */,
+				7E397628202D6ADF00D331DC /* AppDelegate.m in Sources */,
+				7E397639202D6ADF00D331DC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E39763A202D6ADF00D331DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E397643202D6ADF00D331DC /* SpaceXPediaTests.m in Sources */,
+				7E39768B2030C20D00D331DC /* RocketDataModelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E397640202D6ADF00D331DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E397622202D6ADF00D331DC /* SpaceXPedia */;
+			targetProxy = 7E39763F202D6ADF00D331DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E39762F202D6ADF00D331DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E397630202D6ADF00D331DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7E397634202D6ADF00D331DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E397635202D6ADF00D331DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E397645202D6ADF00D331DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7E397646202D6ADF00D331DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E397648202D6ADF00D331DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A72B13D9B06DB818BC783004 /* Pods-SpaceXPedia.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SCZ3JW7K7;
+				INFOPLIST_FILE = SpaceXPedia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rojina.SpaceXPedia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E397649202D6ADF00D331DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C63712EDE1EF1E6BB33F9BF5 /* Pods-SpaceXPedia.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SCZ3JW7K7;
+				INFOPLIST_FILE = SpaceXPedia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rojina.SpaceXPedia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7E39764B202D6ADF00D331DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA0D9F2D5882C0ADAB4FB7DD /* Pods-SpaceXPediaTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2C6TH87C38;
+				INFOPLIST_FILE = SpaceXPediaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rojina.SpaceXPediaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceXPedia.app/SpaceXPedia";
+			};
+			name = Debug;
+		};
+		7E39764C202D6ADF00D331DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3342DD8BFDA18A539900FB20 /* Pods-SpaceXPediaTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2C6TH87C38;
+				INFOPLIST_FILE = SpaceXPediaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rojina.SpaceXPediaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpaceXPedia.app/SpaceXPedia";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E39761E202D6ADF00D331DC /* Build configuration list for PBXProject "SpaceXPedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E397645202D6ADF00D331DC /* Debug */,
+				7E397646202D6ADF00D331DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E397647202D6ADF00D331DC /* Build configuration list for PBXNativeTarget "SpaceXPedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E397648202D6ADF00D331DC /* Debug */,
+				7E397649202D6ADF00D331DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E39764A202D6ADF00D331DC /* Build configuration list for PBXNativeTarget "SpaceXPediaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E39764B202D6ADF00D331DC /* Debug */,
+				7E39764C202D6ADF00D331DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E39761B202D6ADF00D331DC /* Project object */;
+}
